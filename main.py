@@ -40,12 +40,13 @@ def generate_description(product_name, short_desc, draft_desc):
 
     # Create the prompt
     prompt = (
-        f"Write a comprehensive, SEO-optimized product description for the following product:\n"
+        f"Write a comprehensive, SEO-optimized product description in German language for the following product:\n"
         f"Product Name: {product_name}\n"
         f"Short Description: {short_desc}\n"
         f"Draft Description: {draft_desc}\n"
         f"Ensure the product name is used as the main keyword. "
-        f"Please use HTML tags (except h1) so I can easily insert it in my WooCommerce Astra theme webshop."
+        f"Please use HTML tags (except h1) so I can easily insert it in my WooCommerce Astra theme webshop. "
+        f"Please respond without any explanation of your description. "
     )
 
     try:
